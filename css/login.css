@@ -1,0 +1,165 @@
+body {
+	font-family: Roboto,sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+button {
+	font-family: Roboto,sans-serif;
+}
+.form-group input {
+	display: block;
+	margin: 1% 10% 1% 10%;
+	padding-left: 2%;
+	width: 380px;
+	height: 35px;
+	border: 0.1px solid #E8FCFF;
+	border-radius: 4px;
+	color: #526069;
+	padding-left: 15px;
+}
+.form-group input:focus {
+	border: 0.1px solid #35C6DC;
+}
+.remember-person input {
+	margin: 1% 2% 1% 11%;
+}
+#qwe {
+	transform: scale(1.8);
+	cursor: pointer;
+	border: 0;
+}
+.remember-person label {
+	font-size: 14px;
+	color: white;
+}
+.bckgrnd-img img {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: auto;
+	filter: brightness(40%);
+	opacity: 0.9;
+}
+aside {
+	position: fixed;
+	right: 0;
+	z-index: 0;
+	background: #526069;
+	height: 100%;
+	width: 500px;
+}
+.card-img img {
+	display: inline;
+	margin: 10% 5% 2% 12%;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+}
+.card-img hr {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 20%;
+	max-width: 100%;
+}
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.body-btns {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.enter-first {
+	display: flex;
+	flex-direction: row;
+	background: #1AAC4B;
+	border: 0;
+	border-radius: 3px;
+	margin: 8% 10% 1% 10%;
+	width: 398px;
+	height: 40px;
+	cursor: pointer;
+	padding: 0;
+}
+.enter-logo {
+	background-color: #117533;
+	width: 11%;
+	height: 100%;
+	margin: 0;
+	border-radius: 3px 0 0 3px;
+}
+.enter-logo img {
+	width: 50%;
+	margin: 21%;
+}
+.enter-words {
+	color: white;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 4%;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.enter-second {
+	background: #419b5f;
+	border: 0;
+	border-radius: 3px;
+	margin: 3% 10% 1% 10%;
+	width: 398px;
+	height: 30px;
+	color: white;
+	font-size: 13px;
+	cursor: pointer;
+}
+.enter-guest {
+	background: #fff;
+	border: 0;
+	border-radius: 3px;
+	margin: 3% 10% 1% 10%;
+	width: 398px;
+	height: 30px;
+	font-size: 13px;
+	cursor: pointer;
+}
+.enter-first:hover, .enter-second:hover{
+	filter: brightness(120%);
+}
+.enter-guest:hover {
+	filter: brightness(80%);
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	color: white;
+	background: #404040;
+	font-size: 14px;
+	width: 16%;
+	height: auto;
+	line-height: 22px;
+}
+.container {
+	margin: 6% 0 6% 8%;
+}
+.container a {
+	color: #a3a3a3;
+	text-decoration: none;
+}
+.container a:hover {
+	filter: brightness(120%);
+}
+.container a:focus {
+	filter: brightness(100%);
+}
+

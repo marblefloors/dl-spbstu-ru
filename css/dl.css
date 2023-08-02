@@ -1,0 +1,363 @@
+body {
+	font-family: Roboto, sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #c0c0c0;
+	border-radius: 5px;
+}
+
+button,
+select {
+	cursor: pointer;
+	border: 0;
+}
+
+button:hover,
+select:hover {
+	filter: brightness(90%);
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 165%;
+	color: #37474f;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	margin: 0;
+}
+
+main {
+	margin: 0 0 50px 0;
+}
+
+/*----------------------------HEADER-------------------------------*/
+header {
+	background: #419b5f;
+	color: #fff;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: 66px;
+	max-height: 66px;
+}
+
+nav a {
+	margin: 0 10% 0 0;
+}
+
+.logo {
+	margin: 12% 0 0 30%;
+}
+
+.language {
+	margin-right: 70%;
+	background-color: #419b5f;
+	color: white;
+	font-size: 14px;
+}
+
+.language option {
+	background-color: white;
+	color: black;
+}
+
+#enter {
+	background-color: #419b5f;
+	color: white;
+	margin-right: 0.5%;
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+/*--------------------------CAROUSEL------------------------------*/
+.carousel {
+    position: relative;
+    margin: 0;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+/*-----------------------------ASIDE-------------------------------*/
+.aside-text {
+	position: absolute;
+	left: 8%;
+	top: 20%;
+	z-index: 1;
+	font-size: 36px;
+	color: white;
+	max-width: 35%;
+}
+
+.aside-text button {
+	background-color: #419b5f;
+	color: white;
+	border-radius: 3px;
+	width: 11%;
+	height: 30px;
+	width: 20%;
+}
+
+/*--------------------------CONTAINER------------------------------*/
+/*Блок поиска*/
+.search-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+/*Блок ввода*/
+.search-block input#search {
+	border: 0.1px solid #E8FCFF;
+	padding-left: 15px;
+}
+
+/*Блок ввода после действия*/
+.search-block input#search:hover,
+.search-block input#search:focus,
+.search-block input#search:active {
+	border: 0.1px solid #35C6DC;
+}
+
+/*Кнопка поиска*/
+container button {
+	background-color: #419b5f;
+	border-radius: 0 5px 5px 0;
+	content: "\1F50D";
+}
+
+/*Значок лупы*/
+container button:before {
+	content: "\1F50D";
+}
+
+/*Категории курсов*/
+.courses {
+	position: relative;
+	margin: 5% 0 0 10%;
+}
+
+/*Отдельный курс*/
+.courses a {
+	position: relative;
+	text-decoration: none;
+	color: #62a8eb;
+	font-size: 20px;
+	line-height: 165%;
+}
+
+.courses a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #62a8eb;
+	content: "";
+	transition: width 0.5s ease-out;
+}
+
+.courses a:hover:after,
+.courses a:focus:after {
+	text-decoration: underline;
+	width: 100%;
+}
+
+/*---------------------------FOOTER--------------------------------*/
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-self: space-around;
+	flex-wrap: nowrap;
+	background: #404040;
+	color: #a3a3a3;
+	font-family: "Montserrat", sans-serif !important;
+	font-size: 15px;
+	line-height: 165%;
+}
+
+.privacy-policy {
+	margin: 3% 0 3% 8%;
+	width: 40%;
+}
+
+.privacy-policy a {
+	color: #a3a3a3;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.privacy-policy a:hover {
+	color: #419b5f;
+	text-decoration: none;
+}
+
+.contacts {
+	margin: 3% 0 3% 4%;
+	width: 40%;
+}
+
+.social {
+	margin: 3% 8% 3% 0;
+	width: 25%;
+}
+
+.poly-logo {
+	margin: 1% 2% 0 0;
+}
+
+.rccedu-logo {
+	margin: 1% 0 0 2%;
+}
+
+.btns {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 0 20% 0 0;
+}
+
+.social a {
+	text-align: center;
+	width: 34px;
+	height: 32px;
+	float: left;
+	border: 1px solid black;
+	border-radius: 24px;
+	margin: 0 10px 10px 0;
+	padding: 6px;
+	background: #404040;
+	border-color: rgba(255, 255, 255, .2);
+	color: rgb(108, 108, 108);
+	transition: 0.5s;
+}
+
+.social a:hover {
+	background-color: #419b5f;
+}
+
+.contacts a {
+	color: #a3a3a3;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.contacts a:hover {
+	color: #419b5f;
+	text-decoration: none;
+}
